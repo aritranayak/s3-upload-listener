@@ -8,6 +8,7 @@ import com.evanda.ipod.dynamoDB.MusicInfo;
 import com.mpatric.mp3agic.ID3v1;
 import com.mpatric.mp3agic.InvalidDataException;
 import com.mpatric.mp3agic.Mp3File;
+import com.mpatric.mp3agic.NotSupportedException;
 import com.mpatric.mp3agic.UnsupportedTagException;
 
 /**
@@ -34,6 +35,7 @@ public class Mp3FileMetadataExtractor {
 	 * @throws UnsupportedTagException
 	 * @throws InvalidDataException
 	 * @throws IOException
+	 * @throws NotSupportedException 
 	 */
 	public static MusicInfo createMusicInfoObjectFromFile(String pFilePath) throws UnsupportedTagException, InvalidDataException, IOException{
 		MusicInfo _musicInfo = null;
