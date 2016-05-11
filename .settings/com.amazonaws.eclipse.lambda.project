@@ -1,5 +1,5 @@
 #Lambda Function Project Metadata
-#Fri Apr 15 01:09:41 PDT 2016
+#Fri Apr 22 01:17:18 PDT 2016
 lastDeploymentFunctionName=MusicFileUploadListener
 lastDeploymentBucketName=hello-bucket-s3
 lastDeploymentEndpoint=https\://lambda.us-west-2.amazonaws.com/

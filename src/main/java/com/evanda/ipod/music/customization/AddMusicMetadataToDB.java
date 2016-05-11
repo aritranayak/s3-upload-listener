@@ -108,6 +108,7 @@ public class AddMusicMetadataToDB implements RequestHandler<S3EventNotification,
 								  
 								  // now read all info from this temp file
 								  MusicInfo musicInfo = Mp3FileMetadataExtractor.createMusicInfoObjectFromFile("/tmp/" + _keyOfNewObject);
+								  musicInfo.setS3Key(_keyOfNewObject);
 								  
 								  vLogger.log("MusicInfo object =========================>>>>" + musicInfo.toString());
 								  

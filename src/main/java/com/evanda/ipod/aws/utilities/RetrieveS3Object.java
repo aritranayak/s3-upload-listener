@@ -10,7 +10,7 @@ import com.amazonaws.services.s3.event.S3EventNotification;
 import com.amazonaws.services.s3.event.S3EventNotification.S3ObjectEntity;
 
 /**
- * 
+ * Helps in retrieving a S3 object
  * 
  * 
  * @author anayak

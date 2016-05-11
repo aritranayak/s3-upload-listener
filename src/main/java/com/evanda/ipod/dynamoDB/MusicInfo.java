@@ -29,6 +29,8 @@ public class MusicInfo {
 	
 	private String systemComments;
 	
+	private String s3Key;
+	
 	@DynamoDBRangeKey(attributeName="createdTime")
 	private String fileUploadedTime;
 	
@@ -322,6 +324,20 @@ public class MusicInfo {
 	 */
 	public void setComment(String comment) {
 		this.comment = comment;
+	}
+
+	/**
+	 * @return the s3Key
+	 */
+	public String getS3Key() {
+		return s3Key;
+	}
+
+	/**
+	 * @param s3Key the s3Key to set
+	 */
+	public void setS3Key(String s3Key) {
+		this.s3Key = s3Key;
 	}
 	
 
